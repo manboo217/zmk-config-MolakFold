@@ -1,7 +1,7 @@
-if SHIELD_MOLAK_R
+if SHIELD_MolakFold_R
 
 config ZMK_KEYBOARD_NAME
-    default "Molak"
+    default "MolakFold"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -16,7 +16,7 @@ config SPI
     default y
 endif
 
-if SHIELD_MOLAK_R || SHIELD_MOLAK_L
+if SHIELD_MolakFold_R || SHIELD_MolakFold_L
 
 config NFCT_PINS_AS_GPIOS
     default y

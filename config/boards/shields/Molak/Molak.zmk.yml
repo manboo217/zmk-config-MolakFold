@@ -1,8 +1,0 @@
-file_format: "1"
-id: Molak
-name: Molak
-type: shield
-url: https://github.com/manboo217/zmk-config-molak
-requires: [xiao_ble]
-features:
-  - keys

@@ -1,0 +1,8 @@
+file_format: "1"
+id: MolakFold
+name: MolakFold
+type: shield
+url: https://github.com/manboo217/zmk-config-MolakFold
+requires: [xiao_ble]
+features:
+  - keys

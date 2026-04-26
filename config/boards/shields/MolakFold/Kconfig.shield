@@ -1,0 +1,5 @@
+config SHIELD_MolakFold_R
+    def_bool $(shields_list_contains,MolakFold_R)
+
+config SHIELD_MolakFold_L
+    def_bool $(shields_list_contains,MolakFold_L)

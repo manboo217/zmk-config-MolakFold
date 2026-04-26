@@ -1,4 +1,4 @@
-#include "Molak.dtsi"
+#include "MolakFold.dtsi"
 
 &left_encoder {
     status = "okay";
