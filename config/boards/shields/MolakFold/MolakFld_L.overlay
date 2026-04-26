@@ -1,9 +1,0 @@
-#include "MolakFold.dtsi"
-
-&left_encoder {
-    status = "okay";
-};
-
-&uicr {
-    nfct-pins-as-gpios;
-};

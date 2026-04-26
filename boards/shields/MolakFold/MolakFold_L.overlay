@@ -1,0 +1,22 @@
+#include "MolakFold.dtsi"
+
+&left_encoder {
+    status = "okay";
+};
+
+&uicr {
+    nfct-pins-as-gpios;
+};
+
+// LED aliases for zmk-rgbled-widget (xiao_ble onboard RGB: R=P0.26, G=P0.30, B=P0.06)
+/ {
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
+    leds {
+        status = "okay";
+    };
+};
