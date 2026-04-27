@@ -40,8 +40,8 @@
 &kp TAB         &kp Q     &kp W   &kp E   &kp R    &lt 5 T                               &kp Y      &lt 8 U  &kp I      &kp O    &kp P        &kp BSPC
 &kp CAPS        &kp A     &kp S   &kp D   &kp F    &lt 6 G                               &kp H      &lt 8 J  &kp K      &kp L    &kp SEMI     &kp ENTER
 &kp LEFT_SHIFT  &kp Z     &kp X   &kp C   &lt 1 V  &lt 2 B                               &lt 4 N    &kp M    &kp COMMA  &kp DOT  &kp FSLH     &kp RIGHT_SHIFT
-&kp LCTL        &kp LALT  &trans                   &lt 5 SPACE  &lt 5 ENTER  &lt 4 SPACE &mkp ENTER                     &trans   &kp JP_BSLH  &kp RIGHT_ALT
-                                                                &mkp LCLK    &mkp SPACE
+&kp LCTL        &kp LALT  &trans                   &lt 5 SPACE  &lt 5 ENTER  &kp BSPC    &lt 5 ENTER                    &trans   &kp JP_BSLH  &kp RIGHT_ALT
+                                                                &mkp LCLK    &kp SPACE
             >;
 
             sensor-bindings = <&scroll_up_down>;
