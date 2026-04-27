@@ -3,8 +3,8 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
-    col-offset = <9>;
-    row-offset = <9>;
+    col-offset = <10>;
+    row-offset = <10>;
 };
 
 &right_encoder {
