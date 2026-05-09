@@ -52,6 +52,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // set motion
+        force-awake;
         cpi = <600>;
         // swap-xy;
         invert-x;
