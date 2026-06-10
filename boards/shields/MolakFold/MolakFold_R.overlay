@@ -69,7 +69,7 @@
     scroller {
         layers = <5>;  // configure enable layer
         input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,     //swap x and y
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,     //swap x and y
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
             <&zip_xy_to_scroll_mapper>,                         //change mode to scroll
@@ -80,8 +80,8 @@
     precise_mover {
         layers = <6>;  // configure enable layer for PRECISE_MOUSE
         input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
-            // <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
             <&zip_xy_scaler 1 4>;                                 //reduce mouse movement to 1/16
     };
 };
