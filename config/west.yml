@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/sayu-hub
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: manboo217
-      url-base: https://github.com/manboo217
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: zettaface
@@ -20,7 +18,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: manboo217
+      remote: badjeff
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
