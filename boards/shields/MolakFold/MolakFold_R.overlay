@@ -55,7 +55,7 @@
         force-awake;
         cpi = <600>;
         // swap-xy;
-        invert-x;
+        // invert-x;
         // invert-y;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
