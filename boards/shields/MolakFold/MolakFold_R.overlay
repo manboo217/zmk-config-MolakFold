@@ -53,7 +53,7 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // set motion
         cpi = <400>;
-        // swap-xy;
+        swap-xy;    // match PMW3610 hardware default (RES_STEP=0x86: SWAPXY=1)
         // invert-x;
         // invert-y;
         evt-type = <INPUT_EV_REL>;
@@ -65,10 +65,15 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
+    // With hardware swap-xy enabled, prepend XY_SWAP to restore original axis mapping.
+    // Net effect: XY_SWAP (hw) -> XY_SWAP (sw) cancels -> Y_INVERT remains = same as before.
+    input-processors =
+        <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+        <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
     scroller {
         layers = <5>;  // configure enable layer
-        input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,     //swap x and y
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //undo hardware swap-xy before scroll processing
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
              <&zip_xy_to_scroll_mapper>,                         //change mode to scroll
