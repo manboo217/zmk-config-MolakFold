@@ -69,11 +69,11 @@
         layers = <5>;  // configure enable layer
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,     //swap x and y
-            // <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
-            // <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
-            // <&zip_xy_to_scroll_mapper>,                         //change mode to scroll
-            // <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //invert x when scroll
-            // <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //invert y when scroll
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
+             <&zip_xy_to_scroll_mapper>,                         //change mode to scroll
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //invert x when scroll
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //invert y when scroll
             <&zip_scroll_scaler 1 10>;                           //set scroll scale
     };
     precise_mover {
