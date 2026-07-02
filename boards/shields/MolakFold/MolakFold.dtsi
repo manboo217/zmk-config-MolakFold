@@ -128,6 +128,13 @@
             //<&zip_temp_layer 5 500>;     
     };
 
+    trackball_peripheral_listener: trackball_peripheral_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+    };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
