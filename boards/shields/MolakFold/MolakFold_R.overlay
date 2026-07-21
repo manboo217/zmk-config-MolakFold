@@ -72,6 +72,18 @@
     };
 };
 
+// Central side: enable the listener that receives forwarded events from the
+// left peripheral trackball (via &trackball_peripheral_split).
+&trackball_peripheral_listener {
+    status = "okay";
+    scroller {
+        layers = <5>;
+    };
+    precise_mover {
+        layers = <6>;
+    };
+};
+
 // LED aliases for zmk-rgbled-widget (xiao_ble onboard RGB: R=P0.26, G=P0.30, B=P0.06)
 / {
     aliases {
