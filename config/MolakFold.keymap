@@ -45,7 +45,7 @@
                                                               &kp LWIN        &kp ENTER
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         number_layer {
@@ -57,7 +57,7 @@
                                                                &mkp LCLK     &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
         };
 
         symbol_layer {
@@ -69,7 +69,7 @@
                                         &trans                  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>, <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         symbol_us_layer {
@@ -82,7 +82,7 @@
 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>, <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         function_layer {
