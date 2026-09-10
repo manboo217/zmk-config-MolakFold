@@ -98,21 +98,21 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans       &trans        &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT     &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans  &trans          &trans  &trans              &trans       &trans        &trans         &trans  &trans
-                                        &trans              &trans
+&trans  &trans  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &kp LEFT        &kp DOWN      &kp RIGHT      &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &kp LEFT        &kp DOWN      &kp RIGHT      &trans      &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &trans                        &trans         &trans      &trans  &trans             &trans     &trans  &trans
+                                                             &trans      &trans
             >;
         };
 
         precise_mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans        &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans  &trans          &trans  &trans              &trans     &trans        &trans         &trans  &trans
-                                        &trans              &trans
+&trans  &trans  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &kp LEFT        &kp DOWN      &kp RIGHT      &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &kp LEFT        &kp DOWN      &kp RIGHT      &trans      &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &trans                        &trans         &trans      &trans  &trans             &trans     &trans  &trans
+                                                             &trans      &trans
             >;
         };
 
